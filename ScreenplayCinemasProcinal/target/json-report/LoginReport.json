@@ -1,0 +1,50 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Buy a movie",
+        "description": "",
+        "id": "buy-movie-in-procinal;buy-a-movie",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "that Ana selected a movie",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "she buy the movie",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "she checks the details",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Buy Movie in Procinal",
+    "description": "\tAs a web user\n\tI want to buy a movie\n\tTo go and watch it",
+    "id": "buy-movie-in-procinal",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Buy_Movie.feature",
+    "tags": []
+  }
+]
