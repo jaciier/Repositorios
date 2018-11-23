@@ -1,0 +1,60 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Cinemas Procinal</title>
+  <script type="text/javascript" src="https://www.procinal.com.co/sites/default/files/inicio/js/jquery-1.5.2.min.js"></script>
+  <script type="text/javascript" src="https://www.procinal.com.co/sites/default/files/inicio/js/jquery.Storage.js"></script>
+        <script type="text/javascript" src="https://www.procinal.com.co/sites/default/files/inicio/js/config.js"></script>
+        <script type="text/javascript" src="https://www.procinal.com.co/sites/default/files/inicio/js/pre-core.js"></script>
+  <link href="https://www.procinal.com.co/sites/default/files/inicio/css/cortinilla.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div id="bkg-load" class="fullscreen" style="display: block;">
+    <div id="bkg-overlay">
+
+      <div id="load-window" style="display: block;">
+        <div id="load-head"></div>
+        <div id="load-body">
+          <img class="load-logo" src="sites/default/files/inicio/images/logo-red.png" />
+          <img class="load-bar" src="sites/default/files/inicio/images/loadingbar.gif" />
+          <span class="load-text">Cargando, por favor espere un momento</span>
+        </div>
+        <div id="load-foot"></div>
+      </div>
+
+    </div>
+    </div>
+
+
+<div id="exc" style="display: none;">
+<div id="launcher">
+  <div class="encabezado"></div>
+  <div class="cuerpo">
+    <ul>
+      <li><a href="#" onclick="return setLoc('bogota');">Bogotá</a></li>
+      <li><a href="#" onclick="return setLoc('cartagena');">Cartagena</a></li>
+      <li><a href="#" onclick="return setLoc('villavicencio');">Villavicencio</a></li>
+      <li><a href="#" onclick="return setLoc('barrancabermeja');">Barrancabermeja</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" onclick="return setLoc('medellin');">Medellín</a></li>
+      <li><a href="#" onclick="return setLoc('rionegro');">Rionegro</a></li>
+      <li><a href="#" onclick="return setLoc('apartado');">Apartadó</a></li>
+      <li><a href="#" onclick="return setLoc('medellin');">Santa Marta</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  
+  <div class="texto">
+    <ul>
+      <li class="allerReg">Para adquirir y renovar tu Tarjeta Cinemas Procinal, selecciona la ciudad en la que resides.</li>
+      <li>Para reservas, consultas de cartelera y los demás servicios, selecciona la ciudad de tu interés.</li>
+    </ul>
+  </div>
+  <div class="pie"></div>
+</div>
+</div>
+<div id="main_bg" class="slide-launcher-bkg" style="display: none;"><div class="bg_item" style="background: transparent url(https://www.procinal.com.co/sites/default/files/inicio/imagen-cortinilla.jpg?cache=1542854) no-repeat 50% 100%; background-size:cover; width:100%; heigth:100%;)"></div></div>
+
+</body></html><!--!doctype-->

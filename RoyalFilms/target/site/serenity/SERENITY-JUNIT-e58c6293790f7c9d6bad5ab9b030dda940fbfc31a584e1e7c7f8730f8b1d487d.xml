@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Search Film In Royal-Films" skipped="0" tests="1" time="0.8" timestamp="2018-11-21 11:36:23"><testcase name="Search for a film"><failure message="Invalid URL: www.royal-films.com" type="java.lang.AssertionError">Invalid URL: www.royal-films.com</failure><system-err>Invalid URL: www.royal-films.com&#13;
+com.royalfilms.certification.tasks.OpenTheBrowser.performAs(OpenTheBrowser.java:25)&#13;
+com.royalfilms.certification.stepdefinitions.RoyalFilmsStepsDefinitions.thatJhonCanOpenTheBrowser(RoyalFilmsStepsDefinitions.java:31)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+</system-err></testcase></testsuite>

@@ -8,5 +8,4 @@ Feature: The actor enters Cinemas Procinal.
   Scenario: Search Procinal and movie
     Given Actor go to procinal
     When the actor enter city
-    And perform a search
     Then review your search

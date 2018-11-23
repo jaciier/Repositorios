@@ -5,12 +5,11 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
-import com.procinal.certification.cinema.utils.procinalLandingPage;
-public class openTheBrowser implements Task{
+public class OpenTheBrowser implements Task{
 	
 	private PageObject page;
 	
-	public openTheBrowser(PageObject page) {
+	public OpenTheBrowser(PageObject page) {
 		// TODO Auto-generated constructor stub
 		this.page = page;
 	}
@@ -22,8 +21,8 @@ public class openTheBrowser implements Task{
 		actor.attemptsTo(Open.browserOn(page));
 	}
 	
-	public static openTheBrowser on(PageObject page){
-		return Tasks.instrumented(openTheBrowser.class, page);
+	public static OpenTheBrowser on(PageObject page){
+		return Tasks.instrumented(OpenTheBrowser.class, page);
 	}
 
 }

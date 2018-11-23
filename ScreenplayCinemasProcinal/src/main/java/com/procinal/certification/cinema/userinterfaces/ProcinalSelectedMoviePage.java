@@ -21,7 +21,7 @@ public class ProcinalSelectedMoviePage extends PageObject{
 	
 	public static final Target SELECT_DATE_OPTION =
 			Target.the("Select date option").locatedBy(
-					"//table[@id='date-3787_table']//div[@class='picker__day picker__day--infocus picker__day--highlighted']");
+					"//div[@class='picker__day picker__day--infocus picker__day--today picker__day--highlighted']");
 	
 	public static final Target BUTTON_BUSCAR_RESULTADOS =
 			Target.the("Button buscar resultados").locatedBy(
