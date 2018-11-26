@@ -1,0 +1,67 @@
+*Sistema de control de  versiones que nos ayuda a gestionar los archivos de los proyecto, para controlar el historial de modificaciones
+
+como volver atrás cuando se modifica, registro de todo lo que se a cambiado.
+QUIÉN, CUANDO, DONDE, HORA QUÉ MODIFICO Y REVERTIR CÓDIGO.
+Clonar el repositorio a la computadora---> por defecto a la hora de crear un repositorio
+
+GIT----->* distintas versiones de un programa.
+
+OPENSOURSE*--> lInux tourbar creador.
+
+listado de cambios.
+sistema de control distribuido-->trabajar en un código y todos pueden manipularlo.
+
+Snapshots--->ayuda a tomar fotos al código y seguir, solo volvermos y podermos controlar y modificar.
+
+interactua directamente con el sistema operativo
+
+git init--->decir a gir que vamos a crear un proyecto
+add<file>---->pasar de workin a stating
+git status--->en que estado estan los archivos--->que archicovs estmaos trabakando
+gno commits---> los rojos son archivos que no hemos agregado al entorno de trabajo, por esa razón aparecen así.
+
+commit-->staging a repositorio--->pide ingresar a la cuenta de github.
+push--->subir a repositorio remoto
+pull---->trae cambios
+clone---->copia desde el servidor al pc
+pws--->ver donde estamos
+working directory---->donde trabajmos todos los archivos
+add
+staging-->agregar archivos y preparar el guardado
+commit
+repository---->guardamos
+
+git bash here--->en la carpeta de proyectos para abrir terminal
+git init--> crea una carpeta orculpa.
+
+luego de realizar el commit para agregar quiene sta editando lo volvemos a dar commit
+y nos cambia a terminar a un editor de codigo llamado BIN
+PRECIONAMOS LETRA I.
+agregamos un mensaje y ESC y agregado :WQ
+
+y dice que archivos se han cambiado y crea un id para cada archvio.
+git log---> no muestra un hash--->nos muestra todos los cmmit que hemos creado.
+in status y veremos que ya no muestra trabajos pendientes
+
+retroceder---> git checkout -- "name archivo" y enter y nos devuelve al ultimo commit.
+
+git diff "nombre archivo" --
+> para ver las diferencias hechas en los archivos.
+.gitignore--->y le decimos qué carpeta queremos que nos ignore.
+
+git commit -m "texto" y así evitamos entrar al editor BIN.
+
+git branch---> muetra la carpeta master--->solo tengo un proyecto con todos los cambios-
+
+para terner una version alternativa--> git branch login--> estamos creando una verison alternativa con el nombre login.
+git checkout "login"---> para ingresar al alternativo
+git branch --> verificamos.
+
+git add . ---> y agrega todos los archivos.
+
+si pasamos a maser veremos que no vemos los archvicos modificaods por login.
+git remote add origin link --> le decimos donde vamos a subir el repositorio
+git push -u origin master y nos abre para ingresar a github
+git clone "link" y baja todo lo que tenga.
+
+git fetch-->consulta cambios existentes en el repositorio

@@ -6,7 +6,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.findby.By;
 
 @DefaultUrl("https://procinal.com/landing")
-public class ProcinalLandingPage extends PageObject{
+public class procinalLandingPage extends PageObject{
 
 	public static final Target BOTON_MEDELLIN = Target.the("el boton de medellin").located(By.xpath("//ul[@class='clearfix']//li[4]//a[1]"));
 }

@@ -17,15 +17,15 @@ import net.thucydides.core.annotations.findby.By;
 import com.procinal.certification.cinema.tasks.click;
 import com.procinal.certification.cinema.tasks.verifyTheResult;
 import com.procinal.certification.cinema.userinterfaces.ProcinalComponents;
-import com.procinal.certification.cinema.tasks.OpenTheBrowser;
-import com.procinal.certification.cinema.utils.ProcinalLandingPage;
+import com.procinal.certification.cinema.tasks.openTheBrowser;
+import com.procinal.certification.cinema.utils.procinalLandingPage;
 public class ProcinalStepdefinitions {
 	
 	
 	@Managed(driver = "chrome")
 	private WebDriver hisBrowser;
 	
-	private ProcinalLandingPage page;
+	private procinalLandingPage page;
 	
 	private Actor pacho = new Actor("pacho");
 	
@@ -35,7 +35,7 @@ public class ProcinalStepdefinitions {
 	}
 	@Given("^Actor go to procinal$")
 	public void actorGoToProcinal() throws Exception {
-		pacho.wasAbleTo(OpenTheBrowser.on(page));
+		pacho.wasAbleTo(openTheBrowser.on(page));
 	}
 
 	@When("^the actor enter city$")

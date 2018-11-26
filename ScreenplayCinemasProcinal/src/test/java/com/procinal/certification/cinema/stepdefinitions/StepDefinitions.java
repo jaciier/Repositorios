@@ -4,7 +4,7 @@ package com.procinal.certification.cinema.stepdefinitions;
 import org.openqa.selenium.WebDriver;
 
 import com.procinal.certification.cinema.tasks.GoTo;
-import com.procinal.certification.cinema.tasks.OpenTheBrowser;
+import com.procinal.certification.cinema.tasks.openTheBrowser;
 import com.procinal.certification.cinema.tasks.SelectTheWantedMovie;
 import com.procinal.certification.cinema.tasks.verifyTheResult;
 import com.procinal.certification.cinema.userinterfaces.ProcinalComponents;
@@ -35,7 +35,7 @@ public class StepDefinitions {
 	
 	@Given("^that the user wants to choose a new movie$")
 	public void thatTheUserWantsToChooseANewMovie() throws InterruptedException {
-		usuario.wasAbleTo(OpenTheBrowser.on(googleHomePage),
+		usuario.wasAbleTo(openTheBrowser.on(googleHomePage),
 				GoTo.theApp(ProcinalComponents.CARTELERA_BUTTON)); 
 		
 		

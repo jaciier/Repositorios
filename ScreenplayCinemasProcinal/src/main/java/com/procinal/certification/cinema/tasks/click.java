@@ -6,7 +6,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
-import com.procinal.certification.cinema.utils.ProcinalLandingPage;
+import com.procinal.certification.cinema.utils.procinalLandingPage;
+import com.procinal.certification.cinema.utils.procinalLandingPage;
 public class click implements Task{
 	
 	private PageObject page;
@@ -14,7 +15,7 @@ public class click implements Task{
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		// TODO Auto-generated method stub
-		actor.attemptsTo(Click.on(ProcinalLandingPage.BOTON_MEDELLIN));
+		actor.attemptsTo(Click.on(procinalLandingPage.BOTON_MEDELLIN));
 	}
 	
 	public static click on(PageObject page){
