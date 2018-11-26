@@ -1,0 +1,35 @@
+Main todo el desarrrollo
+Test todas las pruebas
+
+Se borran las liberìas por defecto en ambos paquetes	
+
+No se modifican las configuraciones en wrapper (contiene liberias default)
+
+En las librerias externas aparecen dos nuevas: (junit y hamcrest-core). Consultar ambas
+
+Dependencias son donde estàn todas las cosas que voy a necesitar en mi proyecto.
+
+De J-Unit llega Test-NG (otro framework)
+
+De Jcenter estoy obteniendo las dependencias en build.gradle. Tambièn puedo usar Maven o Ivy
+
+Busco maven repository en google y busco a Selenium Java para agregar en dependencies.
+Agrego a Selenium webdriver tambièn y a google chrome driver
+
+Creamos paquete en Test.
+Nombramos el paquete bajo estandares.
+Newtours.demoaut.com
+Dominio Inverso-----> com.demoaut.newtours.________________ ---> area en las que trabaja: certification."pages".
+en pages tendremos todas las clases, lo que vamos a trabajar en el paquete.
+
+creamos otro paquete igual con final en test.
+
+En test creamos un JUnit
+
+//Camel case-------> Estandar para usar---> el estandar mas usado en Java.
+
+Seleccionamos todos los mètodos por defecto que nos trae.
+
+
+
+

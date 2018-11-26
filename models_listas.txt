@@ -1,0 +1,25 @@
+PROBLEMAS DE VERSIÓN.
+
+MODELS---------> una clase que rexiba los parametros, la cual tiene sus constructores con get y set.-->DEimplementar
+Stepp----> creamos lista  = datosTable.asList("class");
+BIN=MODEL.
+
+USO DE LISTA CONSTANTE*
+con que herramienta, con que patrón.
+POM----> Más rápido de aprender y aplicar.
+
+HABLIDAD* ---> Procesos que puede o no realizar un usaurio y admon.D
+ROLES*
+SCREENPLAY ES MORDEABLE SEGÚN LA ORGANIZACIÓN QUE LO ESTA APLICANDO, MANEJANDO 4,5,etc, MÁS DE CLASES PARA LA APLICACIÓN DE ESTE.
+
+Screenplay con Junit.
+
+3 procesos en el test que llame al given, when then.
+
+SCREENPLAY CON JNUIT* TAREA.
+OVERRIDE--->SObre escritura de un método que ya esta implementado.
+
+ANSWERE-->Resuelto o visot por un actor.
+
+Por cada cosa que ver, hay qeu generar un target.
+

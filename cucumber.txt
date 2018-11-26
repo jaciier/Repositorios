@@ -1,0 +1,56 @@
+-Creamos Cucumber
+-Vamos a la tienda en java ---->Plugion de Cucumber.
+-gradel.
+-maves para bajar los repositorios.
+-Eliminar las liberrias por defecto.
+-crear paquetes--->pages, en test StepDefinitions y Runner.
+-Crear carpeta en Proyecto---> Features.
+-En Features---> Creamos nuevo File---> busqueda.Feacture (sin S).
+-Cambiamos Correo de Author.
+
+"placeholder----> valores como ejemplos predeterminados."
+
+Scripst ---> "" ---> cadenas.
+
+SMOKE TEST--->prueba de humo, en la cual se chequea lo mínimo que debe de hacer (pre-prueba).
+
+pasa de ser casos de prubeas a ser Scenario. 
+//Regresion ---> despues de ejecutar y encontrar error y dar solucion y dar prueba de nuevo, y volver a probar pruebas básicas para verificar que todo funcione igual (CRULD).
+
+Outline----> ya le mandamos datos.
+
+-Siempre se graba despues de agregar el giuve, whe...
+-Ahora creamos el StepDefinitions--->Runner--->Nueva Clase--->con el final en Runner
+
+@Test---> usa JUnit.
+
+En serenity todo tiene que ver con el CRULD.
+
+@before{
+	OnStage ---->casting, presentación.
+}
+
+
+-Agregamos por import import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+-los Rumm--> @RunWith(Cucumber.class)
+@CucumberOptions(features="Features",gglue="co.com.google.StepDefinitions")
+en ="Features" agregamos la carpeta que hemos creado exaptamente igual.}
+luego en el glue agregamos el packete de step definitins.
+
+-Run as y copiamos el codigo give...
+
+luego en Stepdefiniiotn paquetes creamos un cucumber, agregamos los @, al final el ponemos stepsdefinitions.
+
+-Luego borramos los predeterminados y pegamos que copiamos anteriormente
+-borramos las excepciones.
+-Creamos 
+- tags = "@Tag1" ---> con esto especificamos que tag vamos a ejecutar
+
+//Sysout control espacio--->truco
+
+Consultar el cucumberoptions---> para general el reporte.
+
+Parametros enteros y con cadenas, y tabla de datos.--->Clase de mañana.

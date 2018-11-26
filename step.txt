@@ -1,0 +1,47 @@
+import co.com.procinal.certification.tasks.OpenTheBrowser;
+import co.com.procinal.certification.tasks.RequirementProcinal;
+import co.com.procinal.certification.userinterfaces.CinemaProcinalPage;
+import co.com.procinal.certification.userinterfaces.ComponentsProcinal;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+
+public class ProcinalStepsDefinitions {
+	@Managed(driver ="chrome")
+	private WebDriver hisBrowser; // variable de clase correctamente instanciada
+	private Actor pacho = Actor.named("Pacho");
+	private CinemaProcinalPage ProcinalPage;
+	
+	@Before
+	public void setUp() {
+		pacho.can(BrowseTheWeb.with(hisBrowser));
+	}
+	
+	@Given("^Actor go to procinal$")
+	public void actorGoToProcinal() throws Exception{
+		pacho.wasAbleTo(OpenTheBrowser.on(ProcinalPage));
+	}
+
+
+	@When("^the actor enter city$")
+	public void theActorEnterCity() throws Exception {
+	//	System.out.println(RequirementProcinal.the(ComponentsProcinal.Enter_City));
+		pacho.wasAbleTo(RequirementProcinal.the(ComponentsProcinal.Enter_City));
+	}
+
+	@When("^perform a search$")
+	public void performASearch() throws Exception{
+	//	pacho.wasAbleTo(SearchMovie.the());
+	}
+
+	@Then("^review your search$")
+	public void reviewYourSearch() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	}
+
+
+}
