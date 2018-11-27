@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-11-2018 09:59</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-11-2018 07:39</span>
     <br style="clear:left"/>
 </div>
 
@@ -153,9 +153,9 @@ To watch the film
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Buy a movie ticket
+                                <span class="success-color">Buy a movie ticket
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -172,104 +172,41 @@ To watch the film
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-
-                        <div class="panel-heading title="Element should be enabled exception: Expected enabled element was not enabled">
-                            Element should be enabled exception: Expected enabled element was not enabled
-                        </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                            data-target="#stacktraceModal-overall">
-                        View details
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                    net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>
-                                        <pre>Expected enabled element was not enabled</pre>
-                                    </h5>
-                                    com.procinal.certification.cinema.tasks.SelectTheWantedMovie.performAs(SelectTheWantedMovie.java
-                                    :21) <br>
-                                    com.procinal.certification.cinema.stepdefinitions.StepDefinitions.theUserManagesToFindTheThatHeWants(StepDefinitions.java
-                                    :46) <br>
-                                    cucumber.runner.Runner.runPickle(Runner.java
-                                    :80) <br>
-                                    org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
-                                    :86) <br>
-                                    org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
-                                    :38) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :538) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :760) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
-                                    :460) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
-                                    :206) <br>
-                            </div>
-
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h4 class="modal-title" id="stacktraceModalLabel">
-                                        Caused by: org.openqa.selenium.TimeoutException
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                        <pre>Expected condition failed: waiting for By.xpath: //*[@class='tab_cont']//ul[@class='gallery-items list_peliculas']//img[@alt='BOHEMIAN RHAPSODY'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                                    <pre>
-                                        com.procinal.certification.cinema.tasks.SelectTheWantedMovie.performAs(SelectTheWantedMovie.java :21) <br>
-                                        com.procinal.certification.cinema.stepdefinitions.StepDefinitions.theUserManagesToFindTheThatHeWants(StepDefinitions.java :46) <br>
-                                        cucumber.runner.Runner.runPickle(Runner.java :80) <br>
-                                        org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86) <br>
-                                        org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206) <br>
-                                    </pre>
-                                </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="panel-body">
-                    <a href="pagesource4959890045421891804.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="deb718983f79c2ff41ed36be857b43f0485cb23a8376a4af6305bf8a8f4d543e.png" title="Given Actor go to procinal" width="1034"/>
-                <img src="deb718983f79c2ff41ed36be857b43f0485cb23a8376a4af6305bf8a8f4d543e.png" title="pacho opens the Procinal landing page" width="1034"/>
-                <img src="a9676e0acab4ddda321e60c839f4601b1036ce2ac9a051745ae546d4e9d1d7f8.png" title="When the actor enter city" width="1034"/>
-                <img src="1616f69e11bf0a30917cb10d02d1a62ca427c6b9eba4bf32e92c53a8eefeb42d.png" title="pacho clicks on el boton de medellin" width="1034"/>
-                <img src="b41911c8f9b4b47ca469dbd1ad0fba272630596153db9b2c09bb6a9b72b1b52c.png" title="pacho clicks on el boton de medellin" width="1034"/>
-                <img src="8d75e8739e159879966825a41e4261163394b7f8fe5a164afb9128d556b03a05.png" title="Given that the user wants to choose a new movie" width="1034"/>
-                <img src="b68f10c18487ad22502a621303c4e3e4061ee356e2b8407bd0286cbc40b1c183.png" title="Usuario opens the Procinal home page" width="1034"/>
-                <img src="2da2cd75142e9a9e5b90787ed043f26f4342f5386f63ea6c65e6d0d54ad88838.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
-                <img src="8d75e8739e159879966825a41e4261163394b7f8fe5a164afb9128d556b03a05.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
-                <img src="8d75e8739e159879966825a41e4261163394b7f8fe5a164afb9128d556b03a05.png" title="When the user manages to find the &lt;movie&gt; that he wants" width="1034"/>
-                <img src="8d75e8739e159879966825a41e4261163394b7f8fe5a164afb9128d556b03a05.png" title="Usuario clicks on That is the section space, where are all billboard movies: <span class='failing-color'>FAILURE</span>" width="1034"/>
+                <img src="9c0d9354b926dc9b563ec7cbd56e9c857be6fb77e16ef0e100026b242e4fc017.png" title="Given Actor go to procinal" width="1034"/>
+                <img src="9c0d9354b926dc9b563ec7cbd56e9c857be6fb77e16ef0e100026b242e4fc017.png" title="pacho opens the Procinal landing page" width="1034"/>
+                <img src="ec22333876013d15b06c788a421af55cb0c43475f145003ba4102e8f2604efb8.png" title="When the actor enter city" width="1034"/>
+                <img src="21277c812753d8a9ec73b920cba282f5285bfe8668ca897212d337f0b312bf71.png" title="pacho clicks on el boton de medellin" width="1034"/>
+                <img src="af2ca3cb23b776bd42d3438e60ae7eeb2c877bf7f2d43eb759d8b51c209d9935.png" title="Given that the user wants to choose a new movie" width="1034"/>
+                <img src="167ceea6624b613d067855d9bec43ebf6223e4314ef3b6647f6fe625400ca523.png" title="Usuario opens the Procinal home page" width="1034"/>
+                <img src="167ceea6624b613d067855d9bec43ebf6223e4314ef3b6647f6fe625400ca523.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
+                <img src="af2ca3cb23b776bd42d3438e60ae7eeb2c877bf7f2d43eb759d8b51c209d9935.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
+                <img src="108cf63eb328abca6d903c600fc62e9be229fb76ad3aac4fd3d5c182bd76b49c.png" title="When the user manages to find the &lt;movie&gt; that he wants" width="1034"/>
+                <img src="108cf63eb328abca6d903c600fc62e9be229fb76ad3aac4fd3d5c182bd76b49c.png" title="Usuario clicks on That is the section space, where are all billboard movies" width="1034"/>
+                <img src="108cf63eb328abca6d903c600fc62e9be229fb76ad3aac4fd3d5c182bd76b49c.png" title="Then he should have found the &lt;movie&gt;" width="1034"/>
+                <img src="108cf63eb328abca6d903c600fc62e9be229fb76ad3aac4fd3d5c182bd76b49c.png" title="Usuario clicks on That is the section space, where are all billboard movies" width="1034"/>
+                <img src="0bc37b8cce028750a40144cca6c8e2a65ff6868312520f4397591d604583d92b.png" title="Given that Ana selected a movie" width="1034"/>
+                <img src="0bc37b8cce028750a40144cca6c8e2a65ff6868312520f4397591d604583d92b.png" title="Ana opens the Procinal selected movie page" width="1034"/>
+                <img src="66d1bbae7270e7140c05b753e2ce8bb533b604bbfa4099306c84f76069175b06.png" title="When she checks for a date" width="1034"/>
+                <img src="64a8c4b0dc94df5b38636c969cf37d0419d2a748d948d235ad0e21b78ad723c8.png" title="Ana clicks on Select theater" width="1034"/>
+                <img src="92895d04200f59e0c92f46674b01741b9e9f200fe15754e772532f89b9293039.png" title="Ana clicks on Select theater" width="1034"/>
+                <img src="92895d04200f59e0c92f46674b01741b9e9f200fe15754e772532f89b9293039.png" title="Ana clicks on Select theater option" width="1034"/>
+                <img src="a3da5bd04a087afebabc3de0208e52027fc8549c3fc10f6db20a08e66bb1b346.png" title="Ana clicks on Select theater option" width="1034"/>
+                <img src="a3da5bd04a087afebabc3de0208e52027fc8549c3fc10f6db20a08e66bb1b346.png" title="Ana clicks on Select date" width="1034"/>
+                <img src="2808dcd068e8b915b7b9766c266d038b1b0b0b10d285586187050a57b9258cfa.png" title="Ana clicks on Select date" width="1034"/>
+                <img src="b64b97a1ef6a8336580cd159c9ab3fde9d8193b7f2776ac5c3d22a53798e14c1.png" title="Ana clicks on Select date option" width="1034"/>
+                <img src="020cf4216f70713a0293e9fd66d1c1569bf54a382bc7326da8d7b2cd10977ce9.png" title="Ana clicks on Select date option" width="1034"/>
+                <img src="020cf4216f70713a0293e9fd66d1c1569bf54a382bc7326da8d7b2cd10977ce9.png" title="Ana clicks on Button buscar resultados" width="1034"/>
+                <img src="bc4ee0be5cc0fbde2aabbe93e072741925f005f720f8634f7506ee8d835b1359.png" title="Ana clicks on Button buscar resultados" width="1034"/>
+                <img src="773bb9e0e19a081df980f5f91e503d867853faaf7006a1c5949c1f93c5d92eb5.png" title="Ana clicks on Option premiere time" width="1034"/>
+                <img src="95f5d2eec3daeb3363e4d2a5793b18795117fcd9ffdaac664f701439c29722f3.png" title="Ana clicks on Option premiere time" width="1034"/>
+                <img src="c1a1b632ce0f26593c7b2bc137cb54b23c021717a9f4622bae88fcebb31ae350.png" title="And she clicks on the buy button" width="1034"/>
+                <img src="5c1927a644b2bfb2d7778f9852586726df192572a1114a0c30ad325e09621f83.png" title="And she clicks on the buy button" width="1034"/>
+                <img src="c1a1b632ce0f26593c7b2bc137cb54b23c021717a9f4622bae88fcebb31ae350.png" title="Ana clicks on Button compra aqui" width="1034"/>
+                <img src="5c1927a644b2bfb2d7778f9852586726df192572a1114a0c30ad325e09621f83.png" title="Ana clicks on Button compra aqui" width="1034"/>
+                <img src="8ad53d833cb3f07d31ad5a745f3fb4106fc448f41e12b7958700420ce7c3b390.png" title="Then she should see the purchase details" width="1034"/>
+                <img src="328bc432c7141dc529dc20da34f798e3a7b3d7bf6edb24801df9c85b8376a9ee.png" title="Then the purchase should be 'Fandango': <span class='success-color'>SUCCESS</span>" width="1034"/>
             </div>
         </div>
 

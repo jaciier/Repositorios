@@ -28,10 +28,10 @@ public class StepDefinitions {
 	
 	private ProcinalHomePage googleHomePage;
 	
-	@Before
+	/*@Before
 	public void setUp() {
 		usuario.can(BrowseTheWeb.with(hisBrowser));}
-	
+	*/
 	
 	@Given("^that the user wants to choose a new movie$")
 	public void thatTheUserWantsToChooseANewMovie() throws InterruptedException {

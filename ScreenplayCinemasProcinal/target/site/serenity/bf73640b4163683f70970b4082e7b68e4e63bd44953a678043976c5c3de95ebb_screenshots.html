@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-11-2018 21:26</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-11-2018 07:36</span>
     <br style="clear:left"/>
 </div>
 
@@ -158,9 +158,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-square-o pending-icon fa-2x' title='PENDING'></i></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Title of your scenario
+                                <span class="pending-color">Title of your scenario
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -177,99 +177,15 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-
-                        <div class="panel-heading title="Element should be enabled exception: Expected enabled element was not enabled">
-                            Element should be enabled exception: Expected enabled element was not enabled
-                        </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                            data-target="#stacktraceModal-overall">
-                        View details
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                    net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>
-                                        <pre>Expected enabled element was not enabled</pre>
-                                    </h5>
-                                    com.procinal.certification.cinema.tasks.SelectTheWantedMovie.performAs(SelectTheWantedMovie.java
-                                    :21) <br>
-                                    com.procinal.certification.cinema.stepdefinitions.StepDefinitions.theUserManagesToFindTheThatHeWants(StepDefinitions.java
-                                    :46) <br>
-                                    cucumber.runner.Runner.runPickle(Runner.java
-                                    :80) <br>
-                                    org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
-                                    :86) <br>
-                                    org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
-                                    :38) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :538) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :760) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
-                                    :460) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
-                                    :206) <br>
-                            </div>
-
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h4 class="modal-title" id="stacktraceModalLabel">
-                                        Caused by: org.openqa.selenium.TimeoutException
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                        <pre>Expected condition failed: waiting for By.xpath: //*[@class='tab_cont']//ul[@class='gallery-items list_peliculas']//img[@alt='BOHEMIAN RHAPSODY'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                                    <pre>
-                                        com.procinal.certification.cinema.tasks.SelectTheWantedMovie.performAs(SelectTheWantedMovie.java :21) <br>
-                                        com.procinal.certification.cinema.stepdefinitions.StepDefinitions.theUserManagesToFindTheThatHeWants(StepDefinitions.java :46) <br>
-                                        cucumber.runner.Runner.runPickle(Runner.java :80) <br>
-                                        org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86) <br>
-                                        org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206) <br>
-                                    </pre>
-                                </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="panel-body">
-                    <a href="pagesource1614590083460259194.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="913b70f9a12e73486e209a3da77a8ffff1b995e2ff5ae739151816125fbf895f.png" title="Given that the user wants to choose a new movie" width="1034"/>
-                <img src="2da2cd75142e9a9e5b90787ed043f26f4342f5386f63ea6c65e6d0d54ad88838.png" title="Usuario opens the Procinal home page" width="1034"/>
-                <img src="2da2cd75142e9a9e5b90787ed043f26f4342f5386f63ea6c65e6d0d54ad88838.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
-                <img src="913b70f9a12e73486e209a3da77a8ffff1b995e2ff5ae739151816125fbf895f.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
-                <img src="913b70f9a12e73486e209a3da77a8ffff1b995e2ff5ae739151816125fbf895f.png" title="When the user manages to find the movie that he wants" width="1034"/>
-                <img src="913b70f9a12e73486e209a3da77a8ffff1b995e2ff5ae739151816125fbf895f.png" title="Usuario clicks on That is the section space, where are all billboard movies: <span class='failing-color'>FAILURE</span>" width="1034"/>
+                <img src="af2ca3cb23b776bd42d3438e60ae7eeb2c877bf7f2d43eb759d8b51c209d9935.png" title="Given that the user wants to choose a new movie" width="1034"/>
+                <img src="167ceea6624b613d067855d9bec43ebf6223e4314ef3b6647f6fe625400ca523.png" title="Usuario opens the Procinal home page" width="1034"/>
+                <img src="167ceea6624b613d067855d9bec43ebf6223e4314ef3b6647f6fe625400ca523.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
+                <img src="af2ca3cb23b776bd42d3438e60ae7eeb2c877bf7f2d43eb759d8b51c209d9935.png" title="Usuario clicks on Button to go to the billboard&acute;s movies page" width="1034"/>
+                <img src="108cf63eb328abca6d903c600fc62e9be229fb76ad3aac4fd3d5c182bd76b49c.png" title="When the user manages to find the movie that he wants" width="1034"/>
+                <img src="108cf63eb328abca6d903c600fc62e9be229fb76ad3aac4fd3d5c182bd76b49c.png" title="Usuario clicks on That is the section space, where are all billboard movies" width="1034"/>
+                <img src="108cf63eb328abca6d903c600fc62e9be229fb76ad3aac4fd3d5c182bd76b49c.png" title="Then he should have found it: <span class='pending-color'>PENDING</span>" width="1034"/>
             </div>
         </div>
 

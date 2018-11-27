@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: javiier.leoon15@gmail.com
 
 @tag
 Feature: Title of your feature

@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: javiier.leoon15@gmail.com
 
 Feature: Buy Movie Ticket in Procinal
 	As a web user
