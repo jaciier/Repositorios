@@ -50,9 +50,10 @@ dependencies {
   	compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.20'
    	
     //pruebe y compile---->testCompile
-
+compile "net.serenity-bdd:serenity-core:1.9.9"
 compile "net.serenity-bdd:serenity-cucumber:1.9.8"
-compile "net.serenity-bdd:serenity-screenplay:1.9.9"
+compile 'net.serenity-bdd:serenity-junit:1.9.9'
+compile 'net.serenity-bdd:serenity-screenplay:1.9.9'
 compile "net.serenity-bdd:serenity-screenplay-webdriver:1.9.9"
 }
 gradle.startParameter.continueOnFailure = true
