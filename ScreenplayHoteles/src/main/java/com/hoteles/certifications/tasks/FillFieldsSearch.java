@@ -1,5 +1,8 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.BUTTON_SEARCH;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.DESTINATION;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.SELECT_DESTINE;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import com.hoteles.certifications.model.LoginModel;
@@ -22,9 +25,9 @@ public class FillFieldsSearch implements Task{
 	@Override
 	@Step("{0} Full Fuelds login")
 	public <T extends Actor> void performAs(T actor) {
-		actor.attemptsTo(Enter.theValue(searchmodel.getDestination()).into(component.DESTINATION));
-		actor.attemptsTo(Click.on(component.SELECT_DESTINE));
-		actor.attemptsTo(Click.on(component.BUTTON_SEARCH));
+		actor.attemptsTo(Enter.theValue(searchmodel.getDestination()).into(DESTINATION));
+		actor.attemptsTo(Click.on(SELECT_DESTINE));
+		actor.attemptsTo(Click.on(BUTTON_SEARCH));
 
 	}
 	public static FillFieldsSearch enter(SearchModel searchModel) {

@@ -6,6 +6,10 @@ import com.hoteles.certifications.model.LoginModel;
 import com.hoteles.certifications.userinterfaces.HotelesComponents;
 import com.hoteles.certifications.userinterfaces.HotelesPage;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.CLOSED_WINDOWS;
+import static com.hoteles.certifications.userinterfaces.HotelesPage.PASSWOORD;
+import static com.hoteles.certifications.userinterfaces.HotelesPage.SIGN_BUTTON;
+import static com.hoteles.certifications.userinterfaces.HotelesPage.USER_NAME;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import java.util.ArrayList;
@@ -43,10 +47,10 @@ public class FillFields implements Task{
 	//	ArrayList<String> tabs = new ArrayList<String>(driver2.getWindowHandles());
 	//	((WebDriver) BrowseTheWeb.as(actor)).switchTo().window(tabs.get(1));
 	//	actor.attemptsTo(Change.change());
-		actor.attemptsTo(Enter.theValue(loginModel.getUser()).into(hotelespage.USER_NAME));
-		actor.attemptsTo(Enter.theValue(loginModel.getPasswoord()).into(hotelespage.PASSWOORD));
-		actor.attemptsTo(Click.on(hotelespage.SIGN_BUTTON));
-		actor.attemptsTo(Click.on(component.CLOSED_WINDOWS));
+		actor.attemptsTo(Enter.theValue(loginModel.getUser()).into(USER_NAME));
+		actor.attemptsTo(Enter.theValue(loginModel.getPasswoord()).into(PASSWOORD));
+		actor.attemptsTo(Click.on(SIGN_BUTTON));
+		actor.attemptsTo(Click.on(CLOSED_WINDOWS));
 		
 		
 	}

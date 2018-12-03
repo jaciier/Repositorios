@@ -1,5 +1,8 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.BUTTON_SEARCH;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.NUMBER_ROOM;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.SELECT_NUMBER_OCUPATION;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import java.util.List;
@@ -27,15 +30,15 @@ public class FillDateRoom implements Task{
 	}
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		actor.attemptsTo(Click.on(components.NUMBER_ROOM));
-		actor.attemptsTo(Click.on(components.SELECT_NUMBER_OCUPATION));
+		actor.attemptsTo(Click.on(NUMBER_ROOM));
+		actor.attemptsTo(Click.on(SELECT_NUMBER_OCUPATION));
 		//actor.attemptsTo(selectOptionByValue(components.SELECT_ROOM));
 		//actor.attemptsTo(SelectFromOptions.byValue(FindActiveElement(components.SELECT_ROOM)));
 	//	actor.attemptsTo(SelectFromOptions.byVisibleText(date.get(0).getRoom()).from(components.NUMBER_ROOM));
 	//	actor.attemptsTo(Enter.theValue(date.get(0).getRoom()).into(components.NUMBER_ROOM));
 	//	actor.attemptsTo(Enter.theValue(date.get(0).getAdult()).into(components.NUMBER_ADULT));
 	//	actor.attemptsTo(Enter.theValue(date.get(0).getChildren()).into(components.NUMBER_CHILDREN));
-		actor.attemptsTo(Click.on(components.BUTTON_SEARCH));
+		actor.attemptsTo(Click.on(BUTTON_SEARCH));
 	}
 	public static FillDateRoom enter(List<RoomModel> date) {
 		return instrumented(FillDateRoom.class, date);

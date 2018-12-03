@@ -1,5 +1,6 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.CLOSED;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 import org.openqa.selenium.WebDriver;
@@ -30,7 +31,7 @@ public class OpenTheBrowser implements Task{
 
 		actor.attemptsTo(Open.browserOn(page));
 		try {
-			actor.attemptsTo(Click.on(component.CLOSED));
+			actor.attemptsTo(Click.on(CLOSED));
 			
 		} catch(Exception e) {
 		actor.should(seeThat(HotelesPageVisible.isVisible()).orComplainWith(WithoutConnection.class, 

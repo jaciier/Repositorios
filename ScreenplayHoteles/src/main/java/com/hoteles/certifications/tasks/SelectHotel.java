@@ -1,5 +1,7 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.HOTEL;
+
 import java.util.List;
 
 import com.hoteles.certifications.interactions.RandomSelect;
@@ -19,8 +21,8 @@ public class SelectHotel implements Task{
 	}
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		actor.attemptsTo(Scroll.to(component.HOTEL.resolveAllFor(actor).get(3)));
-		actor.attemptsTo(RandomSelect.join(component.HOTEL, date.get(0).getHotel()));
+		actor.attemptsTo(Scroll.to(HOTEL.resolveAllFor(actor).get(3)));
+		actor.attemptsTo(RandomSelect.join(HOTEL, date.get(0).getHotel()));
 	}
 	public static SelectHotel reservation(List<HotelModel> date) {
 		return Tasks.instrumented(SelectHotel.class, date);

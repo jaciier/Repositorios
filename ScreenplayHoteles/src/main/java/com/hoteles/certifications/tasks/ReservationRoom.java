@@ -1,5 +1,6 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.RESERVATION_HOTEL;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import com.hoteles.certifications.userinterfaces.HotelesComponents;
@@ -13,7 +14,7 @@ public class ReservationRoom implements Task{
 
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		actor.attemptsTo(Click.on(component.RESERVATION_HOTEL));
+		actor.attemptsTo(Click.on(RESERVATION_HOTEL));
 		
 	}
 	public static ReservationRoom Button() {

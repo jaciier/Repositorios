@@ -1,5 +1,14 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.CCV;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.EMAIL;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.MONTH;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.NAME_CARD;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.NAME_RESERVATION;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.NUMBRE_CARD;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.PHONE;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.SURNAME_CARD;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.YEAR;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import java.util.List;
@@ -21,16 +30,16 @@ public class FieldsReservation implements Task {
 	}
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		actor.attemptsTo(Enter.theValue(date.get(0).getName()).into(component.NAME_RESERVATION));
-		actor.attemptsTo(Enter.theValue(date.get(0).getSurname()).into(component.SURNAME_CARD));
-		actor.attemptsTo(Enter.theValue(date.get(0).getEmail()).into(component.EMAIL));
-		actor.attemptsTo(Enter.theValue(date.get(0).getPhone()).into(component.PHONE));
-		actor.attemptsTo(Enter.theValue(date.get(0).getNameCard()).into(component.NAME_CARD));
-		actor.attemptsTo(Enter.theValue(date.get(0).getSurnameCard()).into(component.SURNAME_CARD));
-		actor.attemptsTo(Enter.theValue(date.get(0).getCard()).into(component.NUMBRE_CARD));
-		actor.attemptsTo(Enter.theValue(date.get(0).getCode()).into(component.CCV));
-		actor.attemptsTo(Enter.theValue(date.get(0).getMonth()).into(component.MONTH));
-		actor.attemptsTo(Enter.theValue(date.get(0).getYear()).into(component.YEAR));
+		actor.attemptsTo(Enter.theValue(date.get(0).getName()).into(NAME_RESERVATION));
+		actor.attemptsTo(Enter.theValue(date.get(0).getSurname()).into(SURNAME_CARD));
+		actor.attemptsTo(Enter.theValue(date.get(0).getEmail()).into(EMAIL));
+		actor.attemptsTo(Enter.theValue(date.get(0).getPhone()).into(PHONE));
+		actor.attemptsTo(Enter.theValue(date.get(0).getNameCard()).into(NAME_CARD));
+		actor.attemptsTo(Enter.theValue(date.get(0).getSurnameCard()).into(SURNAME_CARD));
+		actor.attemptsTo(Enter.theValue(date.get(0).getCard()).into(NUMBRE_CARD));
+		actor.attemptsTo(Enter.theValue(date.get(0).getCode()).into(CCV));
+		actor.attemptsTo(Enter.theValue(date.get(0).getMonth()).into(MONTH));
+		actor.attemptsTo(Enter.theValue(date.get(0).getYear()).into(YEAR));
 		
 		
 	}

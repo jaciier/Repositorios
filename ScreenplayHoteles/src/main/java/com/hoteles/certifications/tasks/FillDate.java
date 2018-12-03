@@ -1,5 +1,7 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.DEPARTURE_DATE;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.RETUR_DATE;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import java.util.List;
@@ -37,15 +39,15 @@ public class FillDate implements Task {
 		//WebDriver clean = new ChromeDriver();
 		//WebElement fromDateBox= clean.findElement(By.id("qf-0q-localised-check-in"));
 		//fromDateBox.clear();
-		actor.attemptsTo(Click.on(component.DEPARTURE_DATE));
-		actor.attemptsTo(Enter.theValue(date.get(0).getDeparture()).into(component.DEPARTURE_DATE));
+		actor.attemptsTo(Click.on(DEPARTURE_DATE));
+		actor.attemptsTo(Enter.theValue(date.get(0).getDeparture()).into(DEPARTURE_DATE));
 		//actor.attemptsTo(Enter.theValue(hoteldatemodel.getDeparture()).into(component.DEPARTURE_DATE));
-		actor.attemptsTo(Click.on(component.RETUR_DATE));
+		actor.attemptsTo(Click.on(RETUR_DATE));
 	//	actor.attemptsTo(Enter.theValue(hoteldatemodel.getDateReturn()).into(component.RETUR_DATE));
 		//actor.attemptsTo(Enter.theValue(date.get(0).getDeparture()).into(component.DEPARTURE_DATE));
 		//WebElement fromDateBox2= clean.findElement(By.id("qf-0q-localised-check-out"));
 		//fromDateBox2.clear();
-		actor.attemptsTo(Enter.theValue(date.get(0).getDateReturn()).into(component.RETUR_DATE));
+		actor.attemptsTo(Enter.theValue(date.get(0).getDateReturn()).into(RETUR_DATE));
 		
 	}
 	public static FillDate enter(List<HotelDateModel> date) {

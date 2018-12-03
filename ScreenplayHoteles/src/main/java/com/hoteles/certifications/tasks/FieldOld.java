@@ -1,5 +1,6 @@
 package com.hoteles.certifications.tasks;
 
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.OLD_CHILDREN;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import java.util.List;
@@ -21,7 +22,7 @@ public class FieldOld implements Task  {
 	}
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		actor.attemptsTo(SelectFromOptions.byVisibleText(date.get(0).getOldChildren()).from(component.OLD_CHILDREN));
+		actor.attemptsTo(SelectFromOptions.byVisibleText(date.get(0).getOldChildren()).from(OLD_CHILDREN));
 		
 	}
 	public static FieldOld enter(List<OldChildrenModel> date) {

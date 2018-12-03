@@ -1,4 +1,5 @@
 package com.hoteles.certifications.questions;
+import static com.hoteles.certifications.userinterfaces.HotelesComponents.WELCOME;
 import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
 
 import com.hoteles.certifications.userinterfaces.HotelesComponents;
@@ -10,7 +11,7 @@ public class LoginResult implements Question<Boolean>{
 	private static String errorMessage = "Wrong login";
 	@Override
 	public Boolean answeredBy(Actor actor) {
-		return the(HotelesComponents.WELCOME).answeredBy(actor).isCurrentlyVisible();
+		return the(WELCOME).answeredBy(actor).isCurrentlyVisible();
 	}
 	
 	public static LoginResult page() {
